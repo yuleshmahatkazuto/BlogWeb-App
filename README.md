@@ -5,14 +5,15 @@ A responsive blog web application that allows users to create and delete blog po
 
 **Features**
 
-1 Create new blog posts using a structured form.
+1. Create new blog posts using a structured form.
 
-2. View all blog posts in a neat, scrollable list.
-   
+2. View all blog posts in a neat, scrollable list.  
+
 3. Delete unwanted blog posts with a single click.
+   
 4. Fully responsive design for desktops, tablets, and mobile devices.
 
-**Technologies Used
+**Technologies Used**
 
 Frontend: HTML, CSS, JavaScript, Bootstrap  
 
