@@ -31,7 +31,7 @@ https://github.com/yuleshmahatkazuto/BlogWeb-App
 
 **Test Screenshots**
 
-![Home Page](screenshots/home page.png)
+![Home Page](screenshots/homepage.png)
 
 ![Responsive App](screenshots/responsive.png)
 
