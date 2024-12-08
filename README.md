@@ -29,4 +29,10 @@ https://blogweb-app.onrender.com/
 
 https://github.com/yuleshmahatkazuto/BlogWeb-App
 
+**Test Screenshots**
+
+![Home Page](screenshots/home page.png)
+
+![Responsive App](screenshots/responsive.png)
+
 
