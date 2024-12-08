@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex:1;
+}
+
+.icons{
+    fill: white;
+}
+
+#textbox{
+    width: 50%;
+    height: 50vh;
+    padding:10px; /* Add padding for spacing around the text */
+    resize: none;
+    box-sizing: border-box;
+}
+
+#titleBox{
+    resize: none;
+    box-sizing: border-box;
+    width: 50%;
+} 

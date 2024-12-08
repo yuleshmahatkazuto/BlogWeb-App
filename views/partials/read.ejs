@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read</title>
+</head>
+<body>
+    <%- include("header.ejs") %>
+    
+    <main>
+        <div>
+            <h1>The Blogs. Read me!</h1>
+        </div>
+        <br>
+
+        <% if(locals.posts && locals.posts.length > 0 && locals.posts.length === locals.titles.length){ %>
+            <% for(var i = posts.length ; i > 0; i--){ %>
+                <div class="container">
+                    <!-- start of added row -->
+                    <div class="row align-items-center row<%= i %>">
+                      <div class="col-10">
+                        <div>
+                            <h2><%= titles[i-1] %></h2>
+                            <p><%= posts[i-1] %></p>
+                        </div>
+                      </div>
+                      <div class="col text-center">
+                        <form action="delete-blog" method="POST">
+                            <input type="hidden" name="id" value="<%= i-1 %>">
+                            <button type="submit" class="btn btn-outline-danger added" id="button<%= i %>">Delete</button>
+                        </form>
+                      </div>
+                      <hr>
+                    </div>
+                  </div>           
+            <% } %>
+        <% } %>
+        
+        <div class="container">
+            <section>
+                <div class="row align-items-center">
+                    <div class="col-10">
+                        <h2>Tuts+: $175,000 per month</h2>
+                        <p>
+                            As a software developer myself, I am incredibly impressed with websites like Tuts+ that can deliver such outstanding tutorials for people that are looking to learn coding. However, Envato's Tuts+ isn't some newly-formed site. Founded in 2006 by Collis Ta'eed, Cyan Claire, and Jun Rundelivering, it's been delivering outstanding tutorials and content to designers and developers from across the entire planet for quite some time now.
+            
+                            Today, they offer a hub of useful content and a tremendous marketplace where 2,000,000 active buyers are searching for site templates and useful paid tutorials that they offer as part of their platform. They earn their income primarily through a membership area and commissions from sales of digital goods on their platform.
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-10">
+                        <h2>Smashing Magazine: $215,000 per month</h2>
+                        <p>
+                            Smashing Magazine AG is a company that was also formed in 2006 by Sven Lennartz and Vitaly Friedman, dedicated to educating those in the web design and web development fields by offering incredibly useful content to those that are looking to prosper and learn any of these lucrative skills. 
+
+                            The site also has begun hosting web development conferences since 2012, which take place in cities across the world and are sponsored by some of the biggest names in the tech industry. The site earns its income primarily from a membership area where users can sign up to consume a vast number of tutorials from its palette of educational content.
+                        </p>
+                    </div>                        
+                    <hr>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-10">
+                        <h2>Gizmodo</h2>
+                        <p>
+                            Launched in 2002, Gizmodo is a blog focused on subjects like design and technology, while also paying tribute to numerous areas of science and even politics. Originally started by Peter Rojas, Gizmodo gained in popularity quickly. Through partnerships with a variety of international firms, the blog quickly launched translated versions of its content across Europe in languages like French, German, Spanish and even Portuguese.
+
+                            Gizmodo makes the majority of its earnings through advertisements. On its home page, which is its most valuable digital real estate, you won't find an abundance of ads, but you will find ads that often repeat. For example, a large ad on the top will be parlayed along with ads for the same company on the side as you scroll, often repeating with each scroll and capped off with a large ad on the bottom of the home page. Subsequent pages often feature a variety of differing ads, likely based on historical traffic. 
+                        </p>
+                    </div>                        
+                    <hr>
+                </div>
+            </section>
+        </div>
+    </main>
+    <%- include("footer.ejs") %>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- I wrote this code to remove the div from the front end to when pressing the delete button but realized that the div is automatically removed upon removing the whole information about the div in the backend. -->
+    <!-- <script>
+        if (typeof jQuery === "undefined") {
+            console.error("jQuery is not loaded.");
+        }
+
+        else{
+            console.log("Jquery is properly loaded up.");
+        }
+
+        
+        $(document).on('click', 'button.added', function(){
+            const buttonId = $(this).attr("id");
+            const rowId = buttonId.replace('button', '');
+            $(`.row${rowId}`).remove();
+        });
+    </script>    -->
+
+</body>
+</html>
