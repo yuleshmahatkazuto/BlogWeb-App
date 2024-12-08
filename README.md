@@ -33,6 +33,8 @@ https://github.com/yuleshmahatkazuto/BlogWeb-App
 
 ![Home Page](screenshots/homepage.png)
 
+
+
 ![Responsive App](screenshots/responsive.png)
 
 
