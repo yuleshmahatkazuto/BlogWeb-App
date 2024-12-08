@@ -38,3 +38,18 @@ https://github.com/yuleshmahatkazuto/BlogWeb-App
 ![Responsive App](screenshots/responsive.png)
 
 
+**Challenges Faced**
+1. Difficulty creating the logic to delete the blogs.
+2. Difficulty using xlmns from bootstrap.
+
+**Future advancement**
+1. Added database system to retain the blogs and information.
+2. Edit and update blog feature.
+3. User login and credentials verification feature.
+
+**Author**
+Yulesh Mahat
+yuleshkazuto@gmail.com   
+https://www.linkedin.com/in/yulesh-mahat-a94621308/
+
+
